@@ -9,6 +9,13 @@
 (setq doom-localleader-alt-key "SPC m")
 
 (map!
+  ;; Global Configurations
+  (:leader  
+    :desc "M-x"			    "SPC"	#'execute-extended-command
+    :desc "Full Screen"		    "RET"	#'toggle-frame-fullscreen
+    :desc "Open Shell"		    "'"		#'shell
+    )
+
   ;; Cedile configurations
   (:after cedille-mode
 	  :map cedille-mode-map

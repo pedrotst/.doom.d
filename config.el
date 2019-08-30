@@ -9,3 +9,14 @@
 	      )
 
 (load! "+bindings")
+
+;; Open emacs on fullscreen by default
+;; (toggle-frame-fullscreen)
+
+;; Set the default font and size
+(set-default-font "Menlo 16")
+
+;; Set window default size
+(setq default-frame-alist '((tool-bar-lines . 0)
+			    (width . 100)
+			    (height . 30)))
