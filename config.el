@@ -2,7 +2,7 @@
 
 ;; Place your private configuration here
 
-(setq cedille-path (expand-file-name "lisp/cedille" doom-private-dir))
+(setq cedille-path "~/gitprojects/cedille")
 
 (def-package! cedille-mode
 	      :load-path cedille-path
@@ -20,3 +20,6 @@
 (setq default-frame-alist '((tool-bar-lines . 0)
 			    (width . 100)
 			    (height . 30)))
+
+;; Is there a better way to globally disable smart-parens?
+(turn-off-smartparens-mode)
